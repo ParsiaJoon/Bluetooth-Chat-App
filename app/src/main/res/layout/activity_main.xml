@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvMyId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My ID: ..."
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="To (8-hex) or blank for broadcast"
+        android:inputType="textNoSuggestions"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Message (max 12 chars)"
+        android:inputType="textNoSuggestions"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnBroadcast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send" />
+
+    <ToggleButton
+        android:id="@+id/toggleScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOn="Scanning: ON"
+        android:textOff="Scanning: OFF"
+        android:layout_marginTop="8dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/tvLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+    </ScrollView>
+
+</LinearLayout>
